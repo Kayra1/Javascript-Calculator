@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href=".\style.css">
     <title>Javascript Calculator</title>
 </head>
-<body>
-    <div class="container mx-auto">
-        <h1 class="text-blue-300 text-sm">Javascript Calculator</h1>
+<body class="bg-blue-200">
+    <div class="flex flex-col">
+        <!-- Title -->
+        <h1 class="text-5xl mx-auto">Javascript Calculator</h1>
+
+        <!-- Input -->
+        <div class="flex flex-row mx-auto">
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">0</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">1</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">2</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">3</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">4</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">5</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">6</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">7</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">8</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 numbers">9</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 dot">.</div>
+        </div>
+
+        <div class="flex flex-row mx-auto">
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 operators">+</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 operators">-</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 operators">*</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 operators">/</div>
+        </div>
+        <div class="flex flex-row mx-auto">
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 equal-sign">=</div>
+            <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 backspace">Back</div>
+        </div>
+
+        <!-- Break -->
+        
+
+        <!-- Output -->
+        <div class="flex flex-row mx-auto">
+            <div class="h-20 w-20 border-blue-400 bg-blue-300 text-center py-6 mx-auto temp"></div>
+            <div class="h-20 w-20 border-l-2 border-blue-400 bg-blue-300 text-center py-6 mx-auto cOperator" ></div>
+            <div class="h-20 w-64 border-l-2 border-blue-400 bg-blue-300 text-center py-6 mx-auto result" left-side=""></div>
+        </div>
+        
+        <div class="h-20 w-20 border-2 border-blue-400 bg-blue-300 text-center py-6 mx-auto reset">CE</div>
     </div>
+
+    <script src="main.js"></script>
+    <script>window.onload = addListeners()</script>
 </body>
 </html>
